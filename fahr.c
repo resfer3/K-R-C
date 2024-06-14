@@ -3,6 +3,12 @@
 /* print Fahrenheit-Celsius table
 for fahr = 0, 20, ..., 300; floating-point version */
 
+// #define
+
+#define LOWER 0     // lower limit of table
+#define UPPER 300   // upper limit
+#define STEP 20     // step size
+
 int main(void){
 /*
   float fahr,celsius;
@@ -28,7 +34,7 @@ int main(void){
 int fahr;
 float celsius;
 
-for (fahr = 300; fahr >= 0; fahr-= 20){
+for (fahr = UPPER; fahr >= LOWER; fahr-= STEP){
   
   celsius = (5.0/9.0)*(fahr-32.0);
   printf("%3d %6.1f\n", fahr, celsius); 
