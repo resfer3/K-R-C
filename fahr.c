@@ -4,7 +4,7 @@
 for fahr = 0, 20, ..., 300; floating-point version */
 
 int main(void){
-
+/*
   float fahr,celsius;
   float lower, upper, step;
 
@@ -21,5 +21,20 @@ int main(void){
     printf("%3.0f %6.1f\n", fahr, celsius);
     fahr = fahr + step;
   }
+*/
+
+// exercise 1-5 = Modify the program to go in reverse order
+
+int fahr;
+float celsius;
+
+for (fahr = 300; fahr >= 0; fahr-= 20){
+  
+  celsius = (5.0/9.0)*(fahr-32.0);
+  printf("%3d %6.1f\n", fahr, celsius); 
 
 }
+
+}
+
+
